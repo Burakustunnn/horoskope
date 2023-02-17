@@ -1,25 +1,19 @@
 
-
-const Card =(data)=>{
-    // {title,image,date} = data
-    return(
-        <div className="cards">
-            <div className="title">
-            <h1 >{data.title}</h1>
-            </div>
-
-            <div className="date">
-                <h1>{data.date}</h1>
-            </div>
-
-            <img src={data.image} alt="" />
-
-            <div className="card-over">
-                <p>{data.desc}</p>
-            </div>
-            
+const Card = (data) => {
+    return (
+      <div className="cards">
+        <div className="title">
+          <h1>{data.title}</h1>
         </div>
-
-    )
-}
-export default Card
+        <div className="date">
+          <h1>{data.date}</h1>
+        </div>
+        <img src={data.image} alt="" />
+        <div className="card-over">
+          <p>{data.desc}</p>
+        </div>
+      </div>
+    );
+  };
+  
+  export default Card;

@@ -1,4 +1,4 @@
-@import "../../scss/veriables";
+@import "../../scss/veriables","../../scss/mixins";
 
 .navbar{
     display: flex;
@@ -27,10 +27,21 @@
             }
         }
     }
-    
+
     img{
         width: 100px;
         height: 100px;
     }
 
+}
+@include media-xsm{
+    .links{
+        flex-direction: column;
+    }
+}
+
+@include media-lg{
+    .links{
+        flex-direction: row;
+    }
 }

@@ -1,8 +1,8 @@
-import "./App.scss"
+import "./App.scss";
 import Header from "./components/header/Header";
-import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
-// import './App.css';
+import Main from "./components/main/Main";
+
 
 function App() {
   return (
